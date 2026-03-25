@@ -1,10 +1,12 @@
 import streamlit as st
-import pickle
+import joblib
 
 # Load files
-model = pickle.load(open("model.pkl", "rb"))
-vectorizer = pickle.load(open("vectorizer.pkl", "rb"))
-mapping = pickle.load(open("mapping.pkl", "rb"))
+import joblib
+
+model = joblib.load("model.pkl")
+vectorizer = joblib.load("vectorizer.pkl")
+mapping = joblib.load("mapping.pkl")
 
 st.title("Sentiment Analysis App 😊")
 
