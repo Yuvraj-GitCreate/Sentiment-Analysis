@@ -1,9 +1,6 @@
 import streamlit as st
 import joblib
 
-# Load files
-import joblib
-
 model = joblib.load("model.pkl")
 vectorizer = joblib.load("vectorizer.pkl")
 mapping = joblib.load("mapping.pkl")
